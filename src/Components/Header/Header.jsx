@@ -29,7 +29,7 @@ const Header = () => {
 
       {/* Desktop Navigation */}
       <nav className="nav-menu desktop-menu">
-        <Link to="/" className={location.pathname === "/" ? "active" : ""}>Home</Link>
+        <Link to="/" className={location.pathname === "/" ? "active" : ""}> Home</Link>
         <Link to="/men" className={location.pathname === "/men" ? "active" : ""}>Men</Link>
         <Link to="/women" className={location.pathname === "/women" ? "active" : ""}>Women</Link>
         <Link to="/kids" className={location.pathname === "/kids" ? "active" : ""}>Kids</Link>
