@@ -340,6 +340,7 @@ let all_products = [
     price: 39.99,
     description: "Durable and fashionable shoes for young boys."
   },
+  
   {
     id: 34,
     name: "Male Child Shoe",

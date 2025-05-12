@@ -21,6 +21,7 @@ const Header = () => {
           <img src={logo} alt="Brand Logo" className="logo-image" />
         </Link>
       </div>
+      
 
       {/* Search Bar - Retained */}
       <div className="search">
@@ -37,9 +38,14 @@ const Header = () => {
 
       {/* Action Buttons */}
       <div className="actions">
-        <button className="sign-in">Sign In</button>
+        <Link to="/login" className={location.pathname === "/login" ? "active" : ""}>
+         <button className="sign-in">Log In</button>
+        </Link>
+        
         <div className="cart-container">
-          <img src={cartIcon} alt="Cart" className="cart-icon" />
+          <Link to="/cart" className={location.pathname === "/cart" ? "active" : ""}>
+            <img src={cartIcon} alt="Cart" className="cart-icon" />
+          </Link>
           <span className="cart-counter">{cartCount}</span>
         </div>
 
@@ -51,7 +57,7 @@ const Header = () => {
 
       {/* Mobile Overlay Menu */}
       <div className={`overlay ${menuOpen ? "show" : ""}`} onClick={toggleMenu}>
-        <div className="overlay-menu">
+        <div className="overlay-menu"> 
           <nav className="nav-menu">
             <Link to="/" className={location.pathname === "/" ? "active" : ""}>Home</Link>
             <Link to="/men" className={location.pathname === "/men" ? "active" : ""}>Men</Link>
