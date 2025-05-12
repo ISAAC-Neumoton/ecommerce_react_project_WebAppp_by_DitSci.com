@@ -16,7 +16,6 @@ const App = () => {
     <Router>
       {/* Header stays visible on all pages */}
       <Header />
-      <Hero />
       {/* All your Routes in one place */}
       <Routes>
         <Route path="/" element={<Home />} />

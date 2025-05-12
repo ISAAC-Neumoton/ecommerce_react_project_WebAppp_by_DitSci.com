@@ -3,13 +3,15 @@ import './Hero.css'
 const Hero = () => {
   return (
     <div className='hero'>
-        <div className='hero__content'>
-            <h1>Welcome to Our Store</h1>
-            <p>Discover the best products at unbeatable prices.</p>
-            <button className='hero__button'>Shop Now</button>
+        <div className='hero__right'>
+            <h1>Get Fashion Accessories</h1>
+            <h2>At Affordable Price</h2>
+            <h4>For Everyone</h4>
+            <p>Shop the latest trends in fashion accessories.</p>
+            <button className='hero__button'>Explore Trends</button>
         </div>
-        <div className='hero__image'>
-            <img src="https://via.placeholder.com/800x400" alt="Hero" />
+        <div className='hero_left'>
+            <img src="../assets/Female_banner_img.png" alt="HeroImage" />
         </div>
       
     </div>
