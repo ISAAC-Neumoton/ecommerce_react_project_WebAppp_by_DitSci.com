@@ -1,0 +1,129 @@
+.hero {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(180deg, #d4d4d4, #2b2a2a); /* Light brown gradient */
+    padding: 50px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.hero__right {
+    display: flex;
+    flex-direction: column;
+    flex: 2.5;
+    text-align: left;
+    gap: 1rem;
+    padding-left: 1.5rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.hero__right h1, .hero__right p {
+  color: #4a2c2a;
+  height: 5rem;
+}
+
+.hero__right p {
+  font-size: 1rem;
+  font-weight: 400;
+  font-style: italic;
+}
+.hero__right h1 {
+  font-size: 4.5rem;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid black; /* Simulates a typing cursor */
+  width: 0;
+  animation: typing 5s steps(40, end) forwards, blink 0.7s infinite;
+}
+
+/* Typing animation */
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; border-right: none; } /* Removes blinking after typing */
+}
+
+/* Blinking effect */
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
+.hero__button {
+    background-color: red;
+    color: white;
+    width: 30%;
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    border-radius: 2rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.hero__button:hover {
+  background-color: darkred;
+}
+
+.hero_left {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero_left img {
+  max-width: 90%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        height: auto;
+        padding: 15px;
+        margin: 0%;
+    }
+    .hero__right {
+        padding-left: 0;
+        text-align: start;
+        margin-left: 0.2rem;
+        display: flex;
+        justify-self: start;
+        margin: 0;
+    }
+    .hero__right h1 {
+        font-size: 3rem;
+    }
+    .hero__button {
+        max-width:100%;
+        font-size: 1.5rem;
+        
+    }
+    .hero_left {
+        display: none;
+
+    }
+    .hero__right h1{
+        height: 3rem;
+        font-size: 2.5rem;
+        font-weight: 600;
+    }
+    .hero__right p{
+        font-size: 1rem;
+        height: auto;
+        padding: 0%;
+        margin: 0%;
+    }
+    .hero__button{
+        width: 100% !important;
+        font-size: 1.5rem !important;
+        max-width: 400px !important;
+        
+    
+    }
+}

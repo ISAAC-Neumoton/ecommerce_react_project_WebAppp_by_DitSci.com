@@ -1,0 +1,30 @@
+.popular_items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 4rem;
+    padding: 20px;
+    margin-top: 3rem;
+}
+.Popular {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    padding: 20px;
+    margin-top: 3rem;
+    background: linear-gradient(180deg, #cac4c400, #d3cece);
+}
+.Popular h1 {
+    text-align: center;
+    font-size: 6vmin;
+    font-weight: 700;
+    color: #333;
+    font-family: poppins;
+}
+.Popular hr {
+    width: 10%;
+    align-items: center;
+}
