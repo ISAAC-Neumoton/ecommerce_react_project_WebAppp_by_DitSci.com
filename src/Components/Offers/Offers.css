@@ -1,0 +1,84 @@
+/* General Styles */
+
+.offers{
+
+    display: flex;
+    margin: 4rem ;
+    margin-top: 4rem;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+    padding: 40px;
+    border: none;
+    background: linear-gradient(to right, hsl(0, 0%, 100%), #ffffff); /* Gradient background */
+    box-shadow: 0 4px 20px rgba(236, 234, 234, 0.4);
+}
+.offers_left {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding: 40px;
+    border-radius: 12px;
+    color: rgb(19, 18, 18);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.offers_left_top h1 {
+    font-size: 8rem;
+    font-weight: bold;
+    font-family: poppins;
+    color: rgb(17, 16, 16);
+    text-shadow: 2px 2px 4px rgba(218, 70, 70, 0.6); 
+}
+
+.offers_left_top h2 {
+    font-size: 8rem;
+    color: red; /* Make "50% off" stand out */
+    font-weight: 900;
+    font-family: poppins;
+}
+
+
+
+.offers_left_bottom p {
+    font-size: 1.2rem;
+    font-family: poppins;
+}
+
+/* Stylish Button */
+.offers_btn {
+    background: white;
+    color: black;
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 12px 24px;
+    border-radius: 10%;
+    margin: 3rem;    
+    border: solid black;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 50%;
+    transition: 0.3s ease-in-out;
+}
+
+.offers_btn:hover {
+  background: black;
+  color: white;
+}
+
+/* Right Section with Image */
+.offers_right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.offer_img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 12px;
+}

@@ -1,0 +1,68 @@
+.men-products h1 {
+    font-size: 6rem;
+    font-weight: 900;
+}
+
+.men-products hr{
+    width: 3rem;
+    height: 1px;
+    background-color: #fdf3f3;
+    margin-top: 1rem;
+}
+
+.shopcategory-products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 4rem 0;
+}
+
+.dropdown-icon {
+
+    right: 0.5rem;
+    top: 0.5rem;
+    color: #fdf3f3;
+    font-size: 1.5rem;
+    width: 2rem;
+    height: 2rem;
+}
+.Banner {
+    width: 100%;
+    margin: 5rem;
+    height: 30rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-left{
+    font-family: poppins;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.banner-left h1{
+    font-size: 6rem;
+}
+
+.category-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.category-title h1{
+    font-size: 8rem;
+    font-weight: 800;
+}
+.category-title hr{
+    width: 30%;
+    height: 1px;
+}
+
+/* reponsive design */
+

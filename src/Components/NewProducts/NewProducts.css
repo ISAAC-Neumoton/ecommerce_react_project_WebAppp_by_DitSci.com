@@ -1,0 +1,35 @@
+.new-products {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    gap: 3rem;
+    padding: 20px;
+    margin-top: 3rem;
+}
+.new_products_lists {
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+    max-height: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    padding: 20px;
+    margin-top: 3rem;
+    background: linear-gradient(180deg, #cac4c400, #d3cece);
+}
+.new-products h1 {
+    text-align: center;
+    font-size: 6vmin;
+    font-weight: 700;
+    color: #333;
+    font-family: poppins;
+}
+.new-products hr {
+    width: 10%;
+    align-items: center;
+}
